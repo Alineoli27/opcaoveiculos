@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opção Veículos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #b30000;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .instagram-link {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .instagram-link img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .slider {
+      position: relative;
+      max-width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      width: 500%;
+      animation: slide 20s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% { margin-left: 0; }
+      20% { margin-left: 0; }
+      25% { margin-left: -100%; }
+      45% { margin-left: -100%; }
+      50% { margin-left: -200%; }
+      70% { margin-left: -200%; }
+      75% { margin-left: -300%; }
+      95% { margin-left: -300%; }
+      100% { margin-left: -400%; }
+    }
+
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .carro {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .carro:hover {
+      transform: scale(1.02);
+    }
+
+    .carro img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .carro h3 {
+      margin: 15px;
+      font-size: 1.2rem;
+    }
+
+    .carro p {
+      margin: 0 15px 15px;
+      color: #555;
+    }
+
+    .whatsapp-button {
+      display: block;
+      margin: 0 15px 15px;
+      padding: 10px;
+      background-color: #b30000;
+      color: #d9d9d9;
+      text-align: center;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #8b0000;
+    }
+
+    footer {
+      background-color: #b30000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Opção Veículos</h1>
+    <a class="instagram-link" href="https://www.instagram.com/opcaoveiculosoficial" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram" />
+      @opcaoveiculosoficial
+    </a>
+  </header>
+
+  <!-- SLIDE -->
+  <section class="slider">
+    <div class="slides">
+      <img src="carro5.jpg" alt="Carro 1" />
+      <img src="carro6.jpg" alt="Carro 2" />
+      <img src="carro7.jpg" alt="Carro 3" />
+      <img src="carro8.jpg" alt="Carro 4" />
+      <img src="carro5.jpg" alt="Repetição" />
+    </div>
+  </section>
+
+  <!-- CATÁLOGO DE CARROS -->
+  <section class="catalogo">
+
+    <!-- Fiat Grand Siena -->
+    <div class="carro">
+      <img src="carro3.jpg" alt="Fiat Grand Siena 2013">
+      <h3>Fiat Grand Siena Attractive 1.4 – COMPLETO | 2013</h3>
+      <p>🎨 Cor: Amarelo<br>
+         ✅ Ar-condicionado, Direção hidráulica, Vidros e travas elétricas<br>
+         ✅ Econômico, confortável, revisado, pronto para rodar!<br>
+         📞 (21) 99042-4706
+      </p>
+      <a class="whatsapp-button" href="https://wa.me/5521990424706?text=Olá,%20tenho%20interesse%20no%20Fiat%20Grand%20Siena%202013">Chamar no WhatsApp</a>
+    </div>
+
+    <!-- Hyundai HB20 -->
+    <div class="carro">
+      <img src="carro4.jpg" alt="Hyundai HB20 2014">
+      <h3>Hyundai HB20 Premium 1.6 – COMPLETO | 2014</h3>
+      <p>🎨 Cor: Prata<br>
+         ✅ Ar-condicionado, Direção hidráulica, Multimídia, Rodas liga leve<br>
+         ✅ Top de linha, econômico e potente<br>
+         📞 (21) 99042-4706
+      </p>
+      <a class="whatsapp-button" href="https://wa.me/5521990424706?text=Olá,%20tenho%20interesse%20no%20Hyundai%20HB20%202014">Chamar no WhatsApp</a>
+    </div>
+
+    <!-- Honda City -->
+    <div class="carro">
+      <img src="carro5.jpg" alt="Honda City">
+      <h3>Honda City</h3>
+      <p>Automático, completo, IPVA pago. Pronto para rodar!</p>
+      <a class="whatsapp-button" href="https://wa.me/5521990424706?text=Tenho%20interesse%20no%20Honda%20City">Chamar no WhatsApp</a>
+    </div>
+
+    <!-- Honda Fit -->
+    <div class="carro">
+      <img src="carro6.jpg" alt="Honda Fit">
+      <h3>Honda Fit</h3>
+      <p>Versão LX, econômico e confortável. Excelente para cidade!</p>
+      <a class="whatsapp-button" href="https://wa.me/5521990424706?text=Tenho%20interesse%20no%20Honda%20Fit">Chamar no WhatsApp</a>
+    </div>
+
+    <!-- Nissan Versa -->
+    <div class="carro">
+      <img src="carro7.jpg" alt="Nissan Versa">
+      <h3>Nissan Versa</h3>
+      <p>Sedã espaçoso, ótimo custo-benefício, super conservado.</p>
+      <a class="whatsapp-button" href="https://wa.me/5521990424706?text=Tenho%20interesse%20no%20Nissan%20Versa">Chamar no WhatsApp</a>
+    </div>
+
+    <!-- Fiat Uno Way -->
+    <div class="carro">
+      <img src="carro8.jpg" alt="Fiat Uno Way">
+      <h3>Fiat Uno Way</h3>
+      <p>Compacto, ideal para o dia a dia, excelente consumo!</p>
+      <a class="whatsapp-button" href="https://wa.me/5521990424706?text=Tenho%20interesse%20no%20Fiat%20Uno%20Way">Chamar no WhatsApp</a>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Opção Veículos. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
